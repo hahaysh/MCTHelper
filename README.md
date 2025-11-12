@@ -70,7 +70,9 @@ python -m mcthelper.cli latest-tech
 
 ### Python API
 
-You can also use MCTHelper modules directly in Python:
+You can also use MCTHelper modules directly in Python.
+
+**Quick Example:**
 
 ```python
 from mcthelper import (
@@ -108,6 +110,13 @@ qm.add_qualification('TRAINER-001', 'AZ-900', {
 status = qm.check_expiry('TRAINER-001', 'AZ-900')
 ```
 
+For a complete working example demonstrating all features, see [examples/usage_example.py](examples/usage_example.py).
+
+You can run it with:
+```bash
+python examples/usage_example.py
+```
+
 ## Running Tests
 
 ```bash
@@ -140,6 +149,8 @@ MCTHelper/
 │   ├── test_lecture_prep.py
 │   ├── test_qualifications.py
 │   └── test_tech_learning.py
+├── examples/                   # Usage examples
+│   └── usage_example.py       # Complete example script
 ├── requirements.txt            # Dependencies
 ├── setup.py                    # Package setup
 └── README.md                   # This file
